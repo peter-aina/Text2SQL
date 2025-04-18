@@ -47,7 +47,7 @@ try:
 except psycopg2.Error as e:
     print(f"Error retrieving schema: {e}")
 
-client = genai.Client(api_key="AIzaSyBLsd17zgwUIB8DmgbNy1bUiPTu8XjOaXQ")
+client = genai.Client(api_key="???") # the API key from Gemini
 natural_language_query = input("Enter your query: ")
 prompt = f"""
        You are a helpful assistant that translates natural language into SQL queries.
